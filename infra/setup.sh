@@ -10,7 +10,7 @@ RESOURCE_GROUP="rg-cicd-demo"
 LOCATION="eastus"
 APP_SERVICE_PLAN="asp-cicd-demo"
 WEBAPP_NAME="cicd-demo-$RANDOM"          # must be globally unique - script randomizes it
-GITHUB_ORG="your-github-username"        # <-- CHANGE THIS
+GITHUB_ORG="DesmondJ01"        # <-- CHANGE THIS
 GITHUB_REPO="azure-cicd-demo"            # <-- CHANGE THIS if you name your repo differently
 # --------------------------------
 
