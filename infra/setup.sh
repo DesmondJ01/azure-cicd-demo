@@ -7,7 +7,7 @@ set -e
 
 # ---- EDIT THESE VARIABLES ----
 RESOURCE_GROUP="rg-cicd-demo"
-LOCATION="eastus"
+LOCATION="centralus"
 APP_SERVICE_PLAN="asp-cicd-demo"
 WEBAPP_NAME="cicd-demo-$RANDOM"          # must be globally unique - script randomizes it
 GITHUB_ORG="DesmondJ01"        # <-- CHANGE THIS
