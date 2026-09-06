@@ -7,7 +7,7 @@ set -e
 
 # ---- EDIT THESE VARIABLES ----
 RESOURCE_GROUP="rg-cicd-demo"
-LOCATION="eastus"
+LOCATION="centralus"
 APP_SERVICE_PLAN="asp-cicd-demo"
 WEBAPP_NAME="cicd-demo-$RANDOM"          # must be globally unique - script randomizes it
 GITHUB_ORG="DesmondJ01"        # <-- CHANGE THIS
@@ -35,7 +35,7 @@ az webapp create \
   --name "$WEBAPP_NAME" \
   --resource-group "$RESOURCE_GROUP" \
   --plan "$APP_SERVICE_PLAN" \
-  --runtime "NODE:20-lts"
+  --runtime "NODE|22-lts"
 
 # 4. Create a "staging" deployment slot (requires B1 tier or higher, not Free)
 az webapp deployment slot create \
